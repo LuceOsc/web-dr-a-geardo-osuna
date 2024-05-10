@@ -1,10 +1,17 @@
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import logo from "../assets/images/logo.png";
-import { useState } from "react";
+import logo from "../assets/images/logo.webp";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Nav = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const content = (
@@ -31,15 +38,21 @@ const Nav = () => {
     </>
   );
   return (
-    <nav>
+    <nav
+      data-aos="flip-down"
+      data-aos-anchor-placement="center-center"
+      data-aos-duration="1000"
+    >
       <div className="h-10vh px-40 py-4 max-lg:px-20  max-sm:px-4 ">
         <div className="lg:py-5 flex justify-between z-50 text-white border-solid border-b-2 border-sky-500 ">
           <div className="flex items-center flex-1">
-            <img
-              className="w-60 h-auto max-lg:w-52"
-              src={logo}
-              alt="logo.png"
-            />
+            <a href="https://doctor-abraham-gerardo-osuna.proyecta.com.mx/">
+              <img
+                className="w-60 h-auto max-lg:w-52"
+                src={logo}
+                alt="logo.png"
+              />
+            </a>
           </div>
           <div className="lg:flex md:flex lg: flex-1 items-center justify-end font-normal: hidden ">
             <div className="flex-10">

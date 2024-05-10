@@ -1,6 +1,6 @@
 import React from "react";
 
-import bg from "./assets/images/bg-doctor.png";
+import bg from "./assets/images/bg-doctor.webp";
 
 import Nav from "./components/Nav";
 import Textoheader from "./components/Textoheader";

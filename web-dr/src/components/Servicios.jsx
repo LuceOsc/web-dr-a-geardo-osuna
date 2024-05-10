@@ -12,8 +12,10 @@ import servicio8 from "../assets/images/servicio8.png";
 const Servicios = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-[5rem] px-[10rem] py-[5rem] bg-[#dfe1e2] max-[1700px]:px-20 max-2xl:px-8">
-        <h4 className=" text-[3.4rem] text-center  text-[#024b94] font-moriston-semibold">
+      <div className="flex flex-col justify-center items-center gap-[5rem] px-[10rem] py-[5rem] bg-[#dfe1e2] max-[1700px]:px-20 max-2xl:px-8 max-[500px]:px-4" data-aos="flip-right" data-aos-duration="800"
+    data-aos-easing="ease-in-sine"
+    data-aos-mirror="true">
+        <h4 className=" text-[3.4rem] text-center  text-[#024b94] font-moriston-semibold max-[700px]:text-[2.2rem] max-[400px]:text-[1.6rem]">
           Tratamiento del dolor
         </h4>
         <div className="flex justify-center gap-[10rem] max-[1451px]:gap-[5rem] max-xl:flex-wrap">

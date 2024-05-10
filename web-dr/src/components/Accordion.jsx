@@ -4,14 +4,14 @@ const Accordion = ({ title, answer, image, alt, titlec }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-2 font-moriston-semibold text-[1.5rem] max-xl:text-[1.2rem]">
+    <div className="py-2 font-moriston-semibold text-[1.5rem] max-xl:text-[1.2rem] max-[700px]:text-[1rem]">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between items-center w-full"
       >
         <div className="flex items-center gap-3">
-          <img className=" h-auto w-[2.5rem] " src={image} alt={alt} />
-          <span className="text-[#024b94]">{title}</span>
+          <img className=" h-auto w-[2.5rem] max-[500px]:w-[1.8rem]" src={image} alt={alt} />
+          <span className="text-[#024b94] text-left">{title}</span>
         </div>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
@@ -47,7 +47,7 @@ const Accordion = ({ title, answer, image, alt, titlec }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden ml-[3.3rem] pt-[1rem] leading-loose">
+        <div className="overflow-hidden ml-[3.3rem] pt-[1rem] leading-loose max-[700px]:text-[.9rem]">
           <span className="text-[#1491c5]"> {titlec} </span>
           {answer}
         </div>

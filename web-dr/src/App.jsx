@@ -34,9 +34,6 @@ const App = () => {
             btn1="Infiltraciones"
             btn2="Neuromodulación"
             btn3="Radiofrecuencia "
-            title2="Bloqueos nerviosos"
-            parrafo2="Manejo intervencionista avanzado del dolor o Manejo intervencionista del dolor"
-            parrafo3="Nuestro equipo de especialistas altamente capacitados utiliza técnicas de intervencionismo  avanzado, guiadas por imagen para realizar con precisión la administración de los medicamentos y asegurar resultados óptimos."
           />
         </main>
         <footer id="contacto">

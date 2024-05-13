@@ -9,8 +9,10 @@ import if4 from "../assets/images/if4.svg";
 
 const Footer = ({ parrafof, parrafof2, btnf }) => {
   return (
-    <div data-aos="fade-up" data-aos-duration="800" >
-      <img className=" w-full max-h-[580px] " src={maps} alt="" />
+    <div data-aos="fade-up" data-aos-duration="800">
+      <a href="https://maps.app.goo.gl/fuEobCLgCXmxcgMT9" target="_blank" title="dirección">
+        <img className=" w-full max-h-[580px] " src={maps} alt="" />
+      </a>
       <div
         className="flex items-center justify-center gap-[10rem] px-[1rem] py-12 max-xl:px-[1rem] max-[1200px]:flex-wrap max-[1200px]:gap-[5rem] max-[1200px]:justify-center max-md:py-[3rem]"
         style={{
@@ -34,9 +36,15 @@ const Footer = ({ parrafof, parrafof2, btnf }) => {
               {parrafof2}
             </p>
             <div>
-              <button className="text-[1.3rem] font-moriston-semibold bg-slate-50 px-[6rem] py-[1rem] text-[#024b94] max-[425px]:px-[4rem] max-[425px]:text-[1.2rem]">
-                {btnf}
-              </button>
+              <a
+                href="https://api.whatsapp.com/send?phone=3334911205"
+                target="_blank"
+                title="Whatsapp"
+              >
+                <button className="text-[1.3rem] font-moriston-semibold bg-slate-50 px-[6rem] py-[1rem] text-[#024b94] max-[425px]:px-[4rem] max-[425px]:text-[1.2rem]">
+                  {btnf}
+                </button>
+              </a>
             </div>
           </div>
 
@@ -46,30 +54,41 @@ const Footer = ({ parrafof, parrafof2, btnf }) => {
                 <img className="h-auto w-[1.6rem]" src={if3} alt="" />
               </div>
               <div>
-                <span className=" text-[1.1rem] font-moriston-semibold text-white">
-                  Ubicación
-                </span>
-                <p className="text-[1rem] text-white font-moriston-personal-light max-w-[300px]">
-                  Av. Carlos Canseco 6050, Marina Mazatlan, Cp 82103, Centro
-                  Medico Marina, <br />
-                  Consultorio 209.
-                </p>
+                <a
+                  href="https://maps.app.goo.gl/fuEobCLgCXmxcgMT9"
+                  target="_blank"
+                  title="dirección"
+                >
+                  <span className=" text-[1.1rem] font-moriston-semibold text-white">
+                    Ubicación
+                  </span>
+                  <p className="text-[1rem] text-white font-moriston-personal-light max-w-[300px]">
+                    Av. Carlos Canseco 6050, Marina Mazatlan, Cp 82103, Centro
+                    Medico Marina, <br />
+                    Consultorio 209.
+                  </p>
+                </a>
               </div>
             </div>
 
             <div>
-
               <div className="flex gap-2">
                 <div className="flex items-start">
                   <img className="h-auto w-[1.6rem]" src={if4} alt="" />
                 </div>
                 <div>
-                  <span className="text-[1.1rem] font-moriston-semibold text-white">
-                    WhatsApp
-                  </span>
-                  <p className="text-[1rem] text-white font-moriston-personal-light max-w-[300px]">
-                    333 491 1205
-                  </p>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=3334911205"
+                    target="_blank"
+                    title="Whatsapp"
+                  >
+                    <span className="text-[1.1rem] font-moriston-semibold text-white">
+                      WhatsApp
+                    </span>
+                    <p className="text-[1rem] text-white font-moriston-personal-light max-w-[300px]">
+                      333 491 1205
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -83,7 +102,7 @@ const Footer = ({ parrafof, parrafof2, btnf }) => {
                   Horario de atención
                 </span>
                 <p className="text-[1rem] text-white font-moriston-personal-light max-w-[300px]">
-                  Previa cita <br /> Lunes a sabado: 8:00 am a 03:00 pm 
+                  Previa cita <br /> Lunes a sabado: 8:00 am a 03:00 pm
                 </p>
               </div>
             </div>

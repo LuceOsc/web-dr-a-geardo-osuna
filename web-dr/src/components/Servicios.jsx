@@ -18,11 +18,11 @@ const Servicios = () => {
         data-aos-duration="800"
         data-aos-easing="ease-in-sine"
       >
-        <h4 className=" text-[3.4rem] text-center  text-[#024b94] font-moriston-semibold max-[700px]:text-[2.2rem] max-[400px]:text-[1.6rem]">
+        <h3 className=" text-[3.4rem] text-center  text-[#024b94] font-moriston-semibold max-[700px]:text-[2.2rem] max-[400px]:text-[1.6rem]">
           Tratamiento del dolor
-        </h4>
-        <div className="flex justify-center gap-[10rem] max-[1451px]:gap-[5rem] max-xl:flex-wrap">
-          <div className="flex flex-col gap-5">
+        </h3>
+        <div className="flex justify-center gap-[10rem] max-[1451px]:gap-[1rem] max-xl:flex-wrap ">
+          <div className="flex flex-col gap-5 ">
             <Accordion
               image={servicio1}
               alt="servicio1.png"

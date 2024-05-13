@@ -1,53 +1,52 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 
 import bg from "./assets/images/bg-doctor.webp";
 
-import Nav from "./components/Nav";
-import Textoheader from "./components/Textoheader";
-import Cita from "./components/Cita";
-import Doctor from "./components/Doctor";
-import Servicios from "./components/Servicios";
-import Especial from "./components/Especial";
-import Footer from "./components/Footer";
+const LazyNavbar = lazy(() => import("./components/Nav"));
+const LazyTextoheader = lazy(() => import("./components/Textoheader"));
+const LazyCita = lazy(() => import("./components/Cita"));
+const LazyDoctor = lazy(() => import("./components/Doctor"));
+const LazyServicios = lazy(() => import("./components/Servicios"));
+const LazyEspecial = lazy(() => import("./components/Especial"));
+const LazyFooter = lazy(() => import("./components/Footer"));
 
 const App = () => {
   return (
-    <>
-      <header
-        className="bg-gradient-to-b from-transparent to-black bg-no-repeat bg-cover bg-center w-full h-auto]"
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <Nav />
-        <Textoheader />
-      </header>
-      <main>
-        <div id="inicio">
-          <Cita />
-        </div>
-        <Doctor />
-        <div id="servicios">
-          <Servicios />
-        </div>
-        <Especial
-          title="Cuidados especializados"
-          parrafo="Atención integral para cuidar de tu bienestar físico y emocional"
-          btn1="Bloqueos nerviosos"
-          btn2="Perfusiones"
-          btn3="Ozonoterapia"
-          title2="Bloqueos nerviosos"
-          parrafo2="Alivio del dolor a través de la interrupción de la señal nerviosa"
-          parrafo3="Nuestro equipo de especialistas altamente capacitados utiliza técnicas avanzadas de imagen
-        para guiar con precisión la administración de los mecicamentos y asegurar resultados óptimos."
-        />
-      </main>
-      <footer id="contacto">
-        <Footer 
-        parrafof="Agenda hoy mismo una consulta y da el primer paso hacia el alivio del dolor y una mejor calidad de vida."
-        parrafof2="No permitas que el dolor limite tu vida. ¡Contáctanos ahora y comienza tu camino hacia el alivio y el bienestar!"
-        btnf="CITAS"
-        />
-      </footer>
-    </>
+      <Suspense fallback={<div>Loading...</div>}>
+        <header
+          className="bg-gradient-to-b from-transparent to-black bg-no-repeat bg-cover bg-center w-full h-auto]"
+          style={{ backgroundImage: `url(${bg})` }}
+        >
+          <LazyNavbar />
+          <LazyTextoheader />
+        </header>
+        <main>
+          <div id="inicio">
+            <LazyCita />
+          </div>
+          <LazyDoctor />
+          <div id="servicios">
+            <LazyServicios />
+          </div>
+          <LazyEspecial
+            title="Cuidados especializados"
+            parrafo="Atención integral para cuidar de tu bienestar físico y emocional"
+            btn1="Infiltraciones"
+            btn2="Neuromodulación"
+            btn3="Radiofrecuencia "
+            title2="Bloqueos nerviosos"
+            parrafo2="Manejo intervencionista avanzado del dolor o Manejo intervencionista del dolor"
+            parrafo3="Nuestro equipo de especialistas altamente capacitados utiliza técnicas de intervencionismo  avanzado, guiadas por imagen para realizar con precisión la administración de los medicamentos y asegurar resultados óptimos."
+          />
+        </main>
+        <footer id="contacto">
+          <LazyFooter
+            parrafof="Agenda hoy mismo una consulta y da el primer paso hacia el alivio del dolor y una mejor calidad de vida."
+            parrafof2="No permitas que el dolor limite tu vida. ¡Contáctanos ahora y comienza tu camino hacia el alivio y el bienestar!"
+            btnf="CITAS"
+          />
+        </footer>
+      </Suspense>
   );
 };
 

@@ -76,7 +76,7 @@ const Nav = () => {
             </div>
           </div>
           <div>{click && content}</div>
-          <button className="block md:hidden transition" onClick={handleClick}>
+          <button className="block md:hidden transition" onClick={handleClick} aria-label="[Abrir o Cerrar el menú]">
             {click ? <FaTimes /> : <CiMenuFries />}
           </button>
         </div>

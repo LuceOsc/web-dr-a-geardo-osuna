@@ -9,6 +9,7 @@ export default {
       screens: {
         '2xl': '1536px',
         '3xl': '1920px',
+        'mpeqq': '461px',
         'mpeq': '376px',
         // Agrega más breakpoints si es necesario
       }

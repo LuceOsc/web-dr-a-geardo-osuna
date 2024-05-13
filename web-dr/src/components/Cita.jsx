@@ -4,7 +4,7 @@ const Cita = () => {
   return (
     <>
     <div className="py-5"></div>
-      <div data-aos="zoom-in" data-aos-duration="800" data-aos-mirror="true" className="font-moriston-personal-light flex gap-10 items-center justify-center border-solid border-2 border-sky-500 py-8 px-4 max-[650px]:flex-wrap">
+      <div data-aos="zoom-in" data-aos-duration="800" className="font-moriston-personal-light flex gap-10 items-center justify-center border-solid border-2 border-sky-500 py-8 px-4 max-[650px]:flex-wrap">
         <p className="text-[1.8rem] max-w-[750px] text-center text-[#5e676f] max-[800px]:text-[1.4rem] max-mpeq:text-[1.1rem]">
           Agenda hoy mismo una consulta y da el primer paso hacia el alivio del
           dolor y una mejor calidad de vida.

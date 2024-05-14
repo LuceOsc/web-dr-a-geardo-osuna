@@ -29,11 +29,14 @@ const App = () => {
           <LazyServicios />
         </div>
         <LazyEspecial
-          title="Cuidados especializados"
+          title="Manejo intervencionista avanzado del dolor"
           parrafo="Atención integral para cuidar de tu bienestar físico y emocional"
           btn1="Infiltraciones"
           btn2="Neuromodulación"
           btn3="Radiofrecuencia "
+          defaultTitle2="Infiltraciones"
+          defaultParrafo2="Administración de diversas sustancias para el alivio del dolor en el sitio que lo requiera el paciente."
+          defaultParrafo3="Desde fármacos como los esteroides y anestésicos locales para realizar un bloqueo nervioso con efecto anti-inflamatorio prolongado, hasta ortobiológicos como el plasma rico en plaquetas para aliviar el dolor y obtener los grandes beneficios que ofrece la medicina regenerativa."
         />
       </main>
       <footer id="contacto">

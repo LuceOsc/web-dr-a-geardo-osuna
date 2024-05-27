@@ -10,7 +10,11 @@ const Accordion = ({ title, answer, image, alt, titlec }) => {
         className="flex justify-between items-center w-full"
       >
         <div className="flex items-center gap-3">
-          <img className=" h-auto w-[2.5rem] max-[500px]:w-[1.8rem]" src={image} alt={alt} />
+          <img
+            className=" h-auto w-[2.5rem] max-[500px]:w-[1.8rem]"
+            src={image}
+            alt={alt}
+          />
           <span className="text-[#024b94] text-left">{title}</span>
         </div>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
